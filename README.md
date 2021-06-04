@@ -1,5 +1,6 @@
 # AWSLambda-AWSAPIGateway
 Use AWS Lambda to perform CRUD operations on a database and connect the function with other service to make it visible like a webpage.
+
 About Docker – 
 Docker is a container management service. The keywords of Docker are developed, ship and run anywhere. The whole idea of Docker is for developers to easily develop applications, ship them into containers which can then be deployed anywhere. The initial release of Docker was in March 2013 and since then, it has become the buzzword for modern world development, especially in the face of Agile-based projects.
 The Docker application is a server that runs on a system and is controlled by a command called docker. The docker can run instances of an image which is a complete operating system packed into a file. This running instance is known as a container, as in a container for an operating system. You can start and stop these containers are per demand. You can also completely delete containers and images from the docker system. To get started, you can build an image from a base operating system image, and configure it to your specifications. To ease the repeated building and configuration of images, Docker uses a build file known as the Dockerfile.
