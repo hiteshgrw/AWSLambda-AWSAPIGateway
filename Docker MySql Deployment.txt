@@ -1,0 +1,27 @@
+Install docker and docker-compose on the VM
+	
+	sudo apt-get update
+	sudo apt-get install \
+	apt-transport-https \
+	ca-certificates \
+	curl \
+	gnupg-agent \
+	software-properties-common
+
+	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add –
+
+	sudo apt install docker.io
+	
+	sudo apt install docker-compose
+
+Pull MySql Image from Docker Hub
+
+	sudo docker pull mysql/mysql-server:latest
+
+Run the container
+
+	sudo docker run --detach --name=database --env="MYSQL_ROOT_PASSWORD=desire@1806" --publish 3306:3306 mysql
+
+Move control inside the container
+
+	sudo docker exec -it database mysql -uroot -p

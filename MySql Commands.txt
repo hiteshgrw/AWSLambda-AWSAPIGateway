@@ -1,0 +1,19 @@
+Create new user and assign permission to perform operations
+
+	CREATE USER 'MySql'@'%' IDENTIFIED BY '';
+
+	GRANT ALL PRIVILEGES ON *.* TO 'MySql'@'%' WITH GRANT OPTION;
+
+Create database, select it and create a new table inside it
+
+	CREATE DATABASE regdb;
+
+	Use regdb;
+
+	CREATE TABLE `reg_tbl` (
+  	`rid` int NOT NULL AUTO_INCREMENT,
+  	`name` varchar(45) NOT NULL,
+  	`contact_no` varchar(45) NOT NULL,
+  	`email_id` varchar(45) NOT NULL,
+  	`address` varchar(255) NOT NULL,
+  	PRIMARY KEY (`rid`));
